@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+        .box{
+
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            margin: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">Hey it me Box...!</div>
+    <button class="btn1" id="Changetext">Chage Text</button>
+    <button id="hidebox">Hide</button>
+    <button id="showbox">Show</button>
+   
+
+    <script>
+        $(document).ready(function(){
+            $("#Changetext").click(function(){
+                $("#box").text("Text has been Chnages");
+            })
+        });
+
+        $("#hidebox").click(function(){
+            $("#box").fadeOut();
+        });
+
+        $("#showbox").click(function(){
+            $("#box").fadeIn();
+        });
+
+       
+    </script>
+</body>
+</html>

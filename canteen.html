@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+    <h1>Welcome to ShriDevi Canteen</h1>
+    <table border="1">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <th>Idli</th>
+            <th>30</th>
+            <th><input type="number" id="idliqty" min="0" max="10"></th>
+        </tr>
+        <tr>
+            <th>Dosa</th>
+            <th>40</th>
+            <th><input type="number" id="dosaqty" min="0" max="10"></th>
+        </tr>
+        <tr>
+            <th>poori</th>
+            <th>50</th>
+            <th><input type="number" id="pooriqty" min="0" max="10"></th>
+        </tr>
+        <tr>
+            <th>Paluav</th>
+            <th>40</th>
+            <th><input type="number" id="pulqty" min="0" max="10"></th>
+        </tr>
+        <tr>
+            <th>Chapati</th>
+            <th>40</th>
+            <th><input type="number" id="chapataiqty" min="0" max="10"></th>
+        </tr>
+        <tr>
+            <th>Tea</th>
+            <th>10</th>
+            <th><input type="number" id="teaqty" min="0" max="10"></th>
+        </tr>
+        <tr>
+            <th>Coffee</th>
+            <th>12</th>
+            <th><input type="number" id="Coffeeqty" min="0" max="10"></th>
+        </tr>
+
+    </table>
+    <button onclick="total()">Submit to Get total bill</button>
+    <p id="total">The Price will display here</p>
+    <script src="cantten.js"></script>
+</body>
+</html>

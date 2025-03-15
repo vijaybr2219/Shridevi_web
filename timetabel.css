@@ -1,0 +1,27 @@
+
+
+.mon{
+    background-color: red;
+    color: white;
+}
+
+.tue{
+    background-color: orangered;
+    color: white;
+}
+
+.wed{
+    background-color: rgb(255, 140, 0);
+}
+.thu{
+    background-color: yellowgreen;
+}
+
+.fri{
+    background-color: lightgreen;
+}
+
+.week{
+    background-color: yellowgreen;
+    color: blueviolet;
+}

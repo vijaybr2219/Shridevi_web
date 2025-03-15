@@ -1,0 +1,24 @@
+body{
+    background-color: antiquewhite;
+}
+
+div{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    background-color: aquamarine;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    filter: drop-shadow(10px 10px 10px black);
+    background-image: url(https://t3.ftcdn.net/jpg/04/18/84/78/360_F_418847816_XGQjWVdwKDhDyGVwdvdD3w9gyd0sXv3v.jpg);
+  
+}
+h1{
+    backdrop-filter: blur(10px);
+}
+p{
+    backdrop-filter: blur(10px);
+}

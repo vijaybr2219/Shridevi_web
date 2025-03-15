@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff5733;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border: 2px solid #ff5733;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #e0482a;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+            margin-top: 20px;
+        }
+    </style>
+    <h1>Hey Can i get your phone</h1>
+    <input type="text" name="" id="ans" placeholder="Enter you answer">
+    <button onclick="fun()">Submit</button>
+    <p id="res">will see here</p>
+    <script>
+        function fun(){
+        var answer =document.getElementById("ans").value;
+        var res =document.getElementById("res")
+    while(answer !== "yes"){
+    res.innerHTML = "Hey Please give....😭😭"
+    return;
+         }
+       res.innerHTML = "You are soooo nice 😍";
+        }
+    </script>
+     
+</body>
+</html>    

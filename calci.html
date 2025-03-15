@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator ❤️</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+
+        .container {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #ff4d6d;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff4d6d;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            background: #ff4d6d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #e63950;
+            transform: scale(1.05);
+        }
+
+        #result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .emoji {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Friendship Calculator </h1>
+        <input type="text" id="name1" placeholder="Enter Your Name">
+        <input type="text" id="name2" placeholder="Enter Partner's Name">
+        <button onclick="calculateLove()">Calculate Friendship</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateLove() {
+            var name1 = $("#name1").val;
+            var name2 = $("#name2").val;
+            var result = $("#result");
+
+            if (name1 === "" || name2 === "") {
+                result.innerHTML = "Please enter both names! 😅";
+                return;
+            }
+
+            var lovePercentage = Math.floor(Math.random() * 101);
+           
+
+            
+
+            result.HTML = "The Friendship between you and your crush is"+" "+lovePercentage;
+        }
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

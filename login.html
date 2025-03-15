@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the Password:</h1>
+    <input type="text" name="" id="pass" placeholder="Enter you password">
+    <button onclick="login()">Submit</button>
+    <p id="res"></p>
+
+    <script>
+        function login(){
+            var password = "vijay";
+            var attempt = 3;
+            var res = document.getElementById("res");
+            while(attempt > 0){
+                var userinput = document.getElementById("pass").value;
+                if(attempt>0){
+                if(userinput == password){
+                    
+                    res.innerHTML="Successfully loged in";
+                    return;
+                }else{
+                  attempt --;
+                  if(attempt >0){
+                    res.innerHTML="Incorrect pasword and attempt left is "+attempt;
+                   
+                  }else{
+                    res.innerHTML="Mate pryatna madbeda maguuu";
+                 
+                  }
+                
+                }
+                break;
+            }
+        }}
+    </script>
+</body>
+</html>

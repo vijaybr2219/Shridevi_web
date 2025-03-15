@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+            <div class="left-section">
+                <div class="profile-img">
+                    <img src="sleeping panda.jpg" alt="Profile Picture">
+                </div>
+                <h2>Panda</h2>
+                <p class="role">Software Developer</p>
+                <h3>Contact</h3>
+                <p><i class="icon">📞</i> +123456789</p>
+                <p><i class="icon">✉️</i> Panda@example.com</p>
+                <p><i class="icon">📍</i> New York, USA</p>
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#">🔵 FB</a>
+                    <a href="#">🐦 Twitter</a>
+                    <a href="#">💼 LinkedIn</a>
+                </div>
+            </div>
+            <div class="right-section">
+                <h3>About Me</h3>
+                <p>I am a passionate software developer specializing in front-end and back-end development. I enjoy learning new technologies and creating impactful software solutions.</p>
+                <h3>Skills</h3>
+                <div class="skill">
+                    <p>HTML, CSS, JavaScript</p>
+                    <div class="progress"><div style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="progress"><div style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>React.js</p>
+                    <div class="progress"><div style="width: 80%;"></div></div>
+                </div>
+                <h3>Education</h3>
+                <p><strong>Bachelor's in Computer Science</strong>, XYZ University (2018-2022)</p>
+                <p><strong>Master's in Software Engineering</strong>, ABC University (2022-2024)</p>
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Winner of National Coding Championship 2021</li>
+                    <li>Developed an AI-based chatbot for customer service</li>
+                    <li>Published a research paper on Machine Learning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.profile-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-section {
+    width: 35%;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-img img {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.role {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.right-section {
+    width: 65%;
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 8px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background: #007bff;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .profile-box {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    </style>
+</body>
+</html>
